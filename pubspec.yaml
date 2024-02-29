@@ -28,6 +28,8 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+# Eger karşısına sayı yazmayıp boş bırakırsan o anki güncel sürümü ne ise onu kullan demek
+  palette_generator:
   flutter:
     sdk: flutter
 
