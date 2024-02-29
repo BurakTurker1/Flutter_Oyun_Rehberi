@@ -6,6 +6,7 @@ class Strings {
 
 
 static const List<String> oyun_foto =[
+   "dy",
  "minecraft",
  "witcher",
  "gta",
@@ -21,10 +22,9 @@ static const List<String> oyun_foto =[
  "r6",
  "fallout",
  "valhalla",
- "dy",
-
 ];
   static const List<String> Oyun_Adlari = [
+    "Dying Light",
     "Minecraft",
     "The Witcher 3: Wild Hunt",
     "Grand Theft Auto V",
@@ -40,10 +40,10 @@ static const List<String> oyun_foto =[
     "Rainbow Six Siege",
     "Fallout 4",
     "Assassin's Creed Valhalla",
-    "Dying Light",
   ];
 
   static const List<String> Oyun_Tur = [
+    "Survival Horror",
     "Survival",
     "RPG",
     "Açik Dünya",
@@ -59,12 +59,19 @@ static const List<String> oyun_foto =[
     "Taktiksel FPS",
     "RPG",
     "RPG",
-    "Survival Horror",
   ];
 
   static const List<String> Oyun_Genel_Ozellikleri = [
 
-    "\tGenel Özellikler\n\n"
+        "\tGenel Özellikler\n\n"
+        "\tGeliştirici: Techland\n\n"
+        "\tÇikiş Tarihi: 2015\n\n"
+        "\tFiyat: 30 Dolar \n\n"
+        "\tPlatformlar: Windows, PlayStation, Xbox, Linux \n\n"
+        "\tDil Desteği: Türkçe, İngilizce, Almanca, İspanyolca ... \n\n"
+        "\tÇoklu Oyuncu Desteği: Çok Oyuncu, Tek Oyuncu  \n\n",
+
+        "\tGenel Özellikler\n\n"
         "\tGeliştirici: Mojang Studios\n\n"
         "\tÇikiş Tarihi: 2011\n\n"
         "\tFiyat: 25 Dolar \n\n"
@@ -184,12 +191,5 @@ static const List<String> oyun_foto =[
         "\tDil Desteği: Türkçe, İngilizce, Almanca, İspanyolca ... \n\n"
         "\tÇoklu Oyuncu Desteği: Tek Oyuncu  \n\n",
 
-        "\tGenel Özellikler\n\n"
-        "\tGeliştirici: Techland\n\n"
-        "\tÇikiş Tarihi: 2015\n\n"
-        "\tFiyat: 30 Dolar \n\n"
-        "\tPlatformlar: Windows, PlayStation, Xbox, Linux \n\n"
-        "\tDil Desteği: Türkçe, İngilizce, Almanca, İspanyolca ... \n\n"
-        "\tÇoklu Oyuncu Desteği: Çok Oyuncu, Tek Oyuncu  \n\n",
   ];
 }
