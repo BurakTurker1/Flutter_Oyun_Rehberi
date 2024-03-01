@@ -47,12 +47,23 @@ class _Oyun_detayState extends State<Oyun_detay> {
             child: Container(
               padding: EdgeInsets.all(8),
               margin: EdgeInsets.all(10),
-              child: SingleChildScrollView(
-                child: Text(
-                  widget.secilenOyun.Oyun_Genel_Ozellikleri,
-                  style: TextStyle(fontSize: 25),
-                ),
+              child:  Column(
+                children: [
+                  Text(
+                   widget.secilenOyun.Oyun_Genel_Ozellikleri,
+                   style: TextStyle(fontSize: 20),),
+                   Text(
+                   widget.secilenOyun.oyun_min_Sistem_Gereksimi,
+                   style: TextStyle(fontSize: 20),),
+                   Text(
+                   widget.secilenOyun.oyun_onerilen_Sistem_Gereksimi,
+                   style: TextStyle(fontSize: 20),),
+                ],
               ),
+              // child: SingleChildScrollView(
+              //   child: 
+              //   ),
+              // ),
             ),
           ),
         ],
