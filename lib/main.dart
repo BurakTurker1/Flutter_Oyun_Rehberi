@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_oyun_rehberi/Oyun_Listesi.dart';
+import 'package:flutter_oyun_rehberi/route_generator.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme:ThemeData(
         appBarTheme: AppBarTheme(backgroundColor: Colors.deepOrangeAccent,shadowColor: Colors.red,elevation: 12),
         ) ,
-      home: Oyun_Listesi(),
+      onGenerateRoute: RouteGenerator.routeGenerator,
     );
   }
 }

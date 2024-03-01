@@ -20,7 +20,8 @@ class _Oyun_detayState extends State<Oyun_detay> {
     // sayfa ekran a gelmeden önce burası 1 kere çalışıyo sonra istersen setsate diyerek sayfayı istedin kadar çağıra biliyosun
     //kullanım yerleri degişkenlerin ilk degerlerini atarken kullanılıyo
     super.initState();
-    AppbarRenginiBul(); //future oldugu için ayrı bir method da çağırıyosun ve async yapıyoruz
+    //AppbarRenginiBul(); //future oldugu için ayrı bir method da çağırıyosun ve async yapıyoruz
+    WidgetsBinding.instance!.addPostFrameCallback((_)=>AppbarRenginiBul());//sayfanın build i bitmeden  verdigimiz fonksiyonu(AppbarRenginiBul) çalıştırma demek yani önce sayfayı build ediyo sonra appbar rengini buluyor (büyük projelerde performans konusunda etkili)
   }
 
   
@@ -32,6 +33,7 @@ class _Oyun_detayState extends State<Oyun_detay> {
           SliverAppBar(
             expandedHeight: 250,
             pinned: true,
+            floating: false,
             backgroundColor: appbarRengi,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
@@ -46,24 +48,20 @@ class _Oyun_detayState extends State<Oyun_detay> {
           SliverToBoxAdapter(
             child: Container(
               padding: EdgeInsets.all(8),
-              margin: EdgeInsets.all(10),
+              margin: EdgeInsets.all(5),
               child:  Column(
                 children: [
                   Text(
                    widget.secilenOyun.Oyun_Genel_Ozellikleri,
-                   style: TextStyle(fontSize: 20),),
+                   style: TextStyle(fontSize: 18),),
                    Text(
                    widget.secilenOyun.oyun_min_Sistem_Gereksimi,
-                   style: TextStyle(fontSize: 20),),
+                   style: TextStyle(fontSize: 18),),
                    Text(
                    widget.secilenOyun.oyun_onerilen_Sistem_Gereksimi,
-                   style: TextStyle(fontSize: 20),),
+                   style: TextStyle(fontSize: 18),),
                 ],
               ),
-              // child: SingleChildScrollView(
-              //   child: 
-              //   ),
-              // ),
             ),
           ),
         ],

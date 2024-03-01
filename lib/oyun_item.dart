@@ -14,11 +14,7 @@ class Oyun_item extends StatelessWidget {
       elevation: 35,
       child: ListTile(
         onTap: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => Oyun_detay(secilenOyun: listelenenOyun),
-            ),
-          );
+          Navigator.of(context).pushNamed('/OyunDetay',arguments: listelenenOyun);
         },
         leading: Image.asset(
           "images/" + listelenenOyun.oyunLogo,
